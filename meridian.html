@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian HR Solutions | Hire Better</title>
+    <meta name="description" content="Meridian HR Solutions helps businesses hire skilled employees faster through modern recruitment, screening, and HR advisory services.">
+    <meta name="keywords" content="HR recruitment, hiring employees, recruitment agency, HR services, talent sourcing, candidate screening">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased selection:bg-gray-300 selection:text-black">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold tracking-tight text-black">Meridian.</a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#services" class="hover:text-black transition">Services</a>
+                <a href="#pricing" class="hover:text-black transition">Pricing</a>
+                <a href="#jobs" class="hover:text-black transition">Jobs</a>
+                <a href="#about" class="hover:text-black transition">About</a>
+                <a href="#contact" class="hover:text-black transition">Contact</a>
+            </div>
+
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="#contact" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-black">Log In</a>
+                <a href="#contact" class="px-4 py-2 text-sm font-medium bg-black text-white rounded-lg hover:bg-gray-800 transition shadow-sm">Post a Job</a>
+            </div>
+
+            <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-200 text-gray-700" aria-label="Open menu">
+                <span class="text-xl">☰</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-3 text-sm font-medium text-gray-700">
+                <a href="#services" class="hover:text-black transition">Services</a>
+                <a href="#pricing" class="hover:text-black transition">Pricing</a>
+                <a href="#jobs" class="hover:text-black transition">Jobs</a>
+                <a href="#about" class="hover:text-black transition">About</a>
+                <a href="#contact" class="hover:text-black transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="container mx-auto px-6 py-24 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-700 text-sm font-medium mb-8 border border-gray-200">
+            Modern HR and Recruitment for Growing Businesses
+        </div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6 max-w-4xl mx-auto leading-tight">
+            Hire Better Employees Without the <span class="text-black">Hiring Headache</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Connect people - Transform businesses.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#pricing" class="px-8 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition shadow-md hover:shadow-lg">Hire Talent</a>
+            <a href="#jobs" class="px-8 py-3 bg-white text-gray-700 font-medium rounded-lg border border-gray-300 hover:border-black hover:text-black hover:bg-gray-50 transition shadow-sm">Find Jobs</a>
+        </div>
+        <div class="mt-16 grid md:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
+            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div class="text-2xl font-bold text-gray-900">24h</div>
+                <div class="text-sm text-gray-600 mt-1">Average response time for hiring requests</div>
+            </div>
+            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div class="text-2xl font-bold text-gray-900">3-Step</div>
+                <div class="text-sm text-gray-600 mt-1">Simple process from request to hire</div>
+            </div>
+            <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div class="text-2xl font-bold text-gray-900">SME</div>
+                <div class="text-sm text-gray-600 mt-1">Built for startups and small businesses</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-sm uppercase tracking-[0.2em] text-gray-400 mb-6">Trusted by growing companies</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 opacity-80">
+                <div class="bg-white rounded-xl border border-gray-200 py-4 text-center font-semibold text-gray-500">StartupCo</div>
+                <div class="bg-white rounded-xl border border-gray-200 py-4 text-center font-semibold text-gray-500">RetailPro</div>
+                <div class="bg-white rounded-xl border border-gray-200 py-4 text-center font-semibold text-gray-500">BuildTech</div>
+                <div class="bg-white rounded-xl border border-gray-200 py-4 text-center font-semibold text-gray-500">CafeLink</div>
+                <div class="bg-white rounded-xl border border-gray-200 py-4 text-center font-semibold text-gray-500">NovaOps</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="bg-gray-50 py-20 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Hiring Is Hard for Small Businesses</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Most businesses waste time and money trying to find the right people. Meridian removes the friction.</p>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="p-6 bg-white rounded-2xl border border-gray-200">
+                    <div class="w-10 h-10 bg-gray-100 text-black rounded-lg flex items-center justify-center mb-4 font-bold text-xl">!</div>
+                    <h3 class="font-semibold mb-2">Unqualified Applicants</h3>
+                    <p class="text-sm text-gray-600">Sifting through hundreds of resumes from candidates who do not fit the role.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-gray-200">
+                    <div class="w-10 h-10 bg-gray-100 text-black rounded-lg flex items-center justify-center mb-4 font-bold text-xl">⏳</div>
+                    <h3 class="font-semibold mb-2">Time-Consuming</h3>
+                    <p class="text-sm text-gray-600">Hours lost in screening and interviewing instead of running your business.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-gray-200">
+                    <div class="w-10 h-10 bg-gray-100 text-black rounded-lg flex items-center justify-center mb-4 font-bold text-xl">$</div>
+                    <h3 class="font-semibold mb-2">Expensive Agencies</h3>
+                    <p class="text-sm text-gray-600">Traditional recruiters can charge fees that hurt your bottom line.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-gray-200">
+                    <div class="w-10 h-10 bg-gray-100 text-black rounded-lg flex items-center justify-center mb-4 font-bold text-xl">✕</div>
+                    <h3 class="font-semibold mb-2">Poor Decisions</h3>
+                    <p class="text-sm text-gray-600">Rushed hiring leads to turnover, costing more time and money later.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Services</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Flexible recruitment and HR support for companies that want better hires without building a full HR team.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-4">🔎</div>
+                    <h3 class="font-bold text-lg mb-2">Talent Sourcing</h3>
+                    <p class="text-sm text-gray-600">We find qualified candidates based on your hiring requirements and role criteria.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-4">🧠</div>
+                    <h3 class="font-bold text-lg mb-2">Candidate Screening</h3>
+                    <p class="text-sm text-gray-600">We review resumes, screen applicants, and conduct early interviews for you.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-4">🧩</div>
+                    <h3 class="font-bold text-lg mb-2">Full Recruitment</h3>
+                    <p class="text-sm text-gray-600">End-to-end hiring support from job description to final shortlist.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-4">📈</div>
+                    <h3 class="font-bold text-lg mb-2">HR Advisory</h3>
+                    <p class="text-sm text-gray-600">Advice on hiring strategy, compensation, team structure, and growth planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-20 bg-gray-50 border-y border-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">How Meridian Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">1</div>
+                    <h3 class="font-bold text-xl mb-2">Submit Request</h3>
+                    <p class="text-gray-600">Tell us exactly what you need and share your hiring requirements in minutes.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">2</div>
+                    <h3 class="font-bold text-xl mb-2">Candidate Screening</h3>
+                    <p class="text-gray-600">We source, vet, and interview candidates so you only see the best matches.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">3</div>
+                    <h3 class="font-bold text-xl mb-2">Interview & Hire</h3>
+                    <p class="text-gray-600">Meet shortlisted candidates, make your choice, and move forward with confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid CTA -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="bg-black rounded-3xl p-10 md:p-14 text-center text-white shadow-xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to hire better employees?</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto mb-8">Use Meridian to reduce hiring mistakes, save time, and build a stronger team.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#pricing" class="px-8 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition">View Pricing</a>
+                    <a href="#contact" class="px-8 py-3 bg-gray-800 text-white font-medium rounded-lg border border-gray-700 hover:bg-gray-700 transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Pricing</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Simple pricing for growing businesses. Custom enterprise pricing is available on request.</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-xl mb-2">Talent Sourcing</h3>
+                    <p class="text-sm text-gray-600 mb-6">Meridian finds qualified candidates based on the companys hiring needs. We search through job platforms, professional networks, and candidate databases to create a shortlist of suitable applicants.</p>
+                    <div class="text-4xl font-extrabold mb-6">Rp1.500.000<span class="text-base font-medium text-gray-500"> / role</span></div>
+                    <ul class="space-y-3 text-sm text-gray-600 mb-8">
+                        <li>• 5-10 qualified candidates</li>
+                        <li>• Resume screening</li>
+                        <li>• Candidate shortlist within 710 days</li>
+                    </ul>
+                    <a href="#contact" class="block text-center px-5 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">Choose Plan</a>
+                </div>
+                <div class="bg-black text-white p-8 rounded-2xl shadow-xl border border-black relative">
+                    <div class="absolute top-4 right-4 text-xs font-semibold bg-white/10 px-3 py-1 rounded-full">Most Popular</div>
+                    <h3 class="font-bold text-xl mb-2">Candidate Screening</h3>
+                    <p class="text-gray-300 mb-6">Meridian evaluates candidates through resume review, skill assessment, and preliminary interviews before presenting them to the company.</p>
+                    <div class="text-4xl font-extrabold mb-6">Rp2.500.000<span class="text-base font-medium text-gray-300"> / role</span></div>
+                    <ul class="space-y-3 text-sm text-gray-200 mb-8">
+                        <li>• Resume evaluation</li>
+                        <li>• Basic interview screening</li>
+                        <li>• Personality and skill evaluation summary</li>
+                        <li>• 3-5 highly qualified candidates</li>
+                    </ul>
+                    <a href="#contact" class="block text-center px-5 py-3 bg-white text-black rounded-lg hover:bg-gray-100 transition">Choose Plan</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-xl mb-2">Full Recruitment Service</h3>
+                    <p class="text-sm text-gray-600 mb-6">Meridian manages the entire hiring process from job posting to candidate selection.</p>
+                    <div class="text-4xl font-extrabold mb-6">Rp5.000.000<span class="text-base font-medium text-gray-500"> / role</span></div>
+                    <ul class="space-y-3 text-sm text-gray-600 mb-8">
+                        <li>• Job description creation</li>
+                        <li>• Candidate sourcing</li>
+                        <li>• Resume screening</li>
+                        <li>• Interview coordination</li>
+                        <li>• Final candidate shortlist</li>
+                    </ul>
+                    <a href="#contact" class="block text-center px-5 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs -->
+    <section id="jobs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Job Board</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Example job listings for candidates looking for work through Meridian.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-sm text-gray-500 font-semibold mb-2">Full Time · Jakarta</div>
+                    <h3 class="font-bold text-lg mb-2">Sales Manager</h3>
+                    <p class="text-sm text-gray-600 mb-6">Lead a sales team and drive revenue growth for a fast-growing company.</p>
+                    <a href="#contact" class="inline-flex px-4 py-2 rounded-lg bg-black text-white text-sm hover:bg-gray-800 transition">Apply</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-sm text-gray-500 font-semibold mb-2">Full Time · Bandung</div>
+                    <h3 class="font-bold text-lg mb-2">Marketing Executive</h3>
+                    <p class="text-sm text-gray-600 mb-6">Support campaigns, content, and brand growth across digital channels.</p>
+                    <a href="#contact" class="inline-flex px-4 py-2 rounded-lg bg-black text-white text-sm hover:bg-gray-800 transition">Apply</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-sm text-gray-500 font-semibold mb-2">Part Time · Remote</div>
+                    <h3 class="font-bold text-lg mb-2">Administrative Assistant</h3>
+                    <p class="text-sm text-gray-600 mb-6">Provide admin support, document handling, and communication help.</p>
+                    <a href="#contact" class="inline-flex px-4 py-2 rounded-lg bg-black text-white text-sm hover:bg-gray-800 transition">Apply</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white border-y border-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">What Clients Say</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Trust builds faster when clients can see real business outcomes.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-gray-900 mb-3">★★★★★</div>
+                    <p class="text-gray-700 mb-4">Meridian helped us hire a sales manager in under two weeks.</p>
+                    <div class="text-sm font-semibold">Business Owner</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-gray-900 mb-3">★★★★★</div>
+                    <p class="text-gray-700 mb-4">The screening process saved our team a lot of time and effort.</p>
+                    <div class="text-sm font-semibold">Operations Lead</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-gray-900 mb-3">★★★★★</div>
+                    <p class="text-gray-700 mb-4">Their recruitment support was fast, clear, and highly professional.</p>
+                    <div class="text-sm font-semibold">Founder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-6">About Meridian</h2>
+            <p class="text-gray-600 text-center leading-8">
+                Meridian HR Solutions was founded to help small and growing businesses access professional hiring services without the high costs of traditional recruitment agencies. Our mission is to connect businesses with competent professionals efficiently and transparently.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+                    <h3 class="font-bold mb-2">Efficiency</h3>
+                    <p class="text-sm text-gray-600">Fast hiring processes that save time.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+                    <h3 class="font-bold mb-2">Integrity</h3>
+                    <p class="text-sm text-gray-600">Transparent and honest recruitment support.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+                    <h3 class="font-bold mb-2">Quality</h3>
+                    <p class="text-sm text-gray-600">Only strong candidates are recommended.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-gray-600 mb-8">Send us your hiring needs or partnership inquiries. We usually respond within 24 hours.</p>
+                    <div class="space-y-4 text-gray-700">
+                        <p><span class="font-semibold">Email:</span> contact@meridianhr.com</p>
+                        <p><span class="font-semibold">Business Inquiries:</span> partnerships@meridianhr.com</p>
+                        <p><span class="font-semibold">Job Seekers:</span> careers@meridianhr.com</p>
+                        <p><span class="font-semibold">WhatsApp:</span> +62 XXX XXXX XXXX</p>
+                    </div>
+                </div>
+                <form class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black" placeholder="Tell us what you need..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="text-white font-bold mb-4">Meridian.</h4>
+                <p class="text-sm">Modern HR solutions for growing businesses.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">Careers</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                    <li><a href="#services" class="hover:text-white transition">For Companies</a></li>
+                    <li><a href="#jobs" class="hover:text-white transition">For Job Seekers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2026 Meridian HR Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+
+</body>
+</html>
